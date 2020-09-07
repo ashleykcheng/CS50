@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+<div class = "solid">
+<h1>Home</h1>
+
+<div align = "left">
+
+	<script>
+        function greet()
+        {
+            let name = document.querySelector('#name').value;
+            document.querySelector('#result').innerHTML = 'Hello,  ' + name + '!';
+        }
+    </script>
+    <br>
+
+
+    <p>
+        Insert Name (Optional):
+    </p>
+    <form onsubmit="greet(); return false;">
+        <input type="text" id="name">
+        <input type="submit">
+
+    </form>
+      <div id="result">
+        Hello!
+    </div></br></br>
+
+        <img class = "theimage" src = "/static/IMG_0560.jpg" style = "float: right; width: 225px; height: 300px; padding-left: 20px;"/>
+        <img class = "theimage" src = "/static/newimageashley2.png" style = "float: left; width: 260px; height: 230px; padding-left: 20px; padding-right:20px"/>
+
+
+    <p>
+    Welcome! My name is Ashley Cheng. This is my digital portfolio. I coded this website as the final project of Harvard's CS50 Class. I am currently a junior attending Woodbridge High School in Irvine, CA. As you will see throughout the pages in this website, I am passionate in not only computer science, but in playing basketball and helping those with
+    disabilities.
+    </p>
+    <p>Thank you for visiting my website!</p>
+    </br>
+        </br>    </br>    </br>
+
+
+</div>
+</div>
+{% endblock %}
